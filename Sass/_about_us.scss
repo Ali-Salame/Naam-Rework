@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.quote {
+    color: rgb(12, 12, 49) !important;
+}
+.quote::after {
+    content: 'We aim to communicate with achiver women to empower ambitious women';
+    display: block;
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: normal;
+}
+.container__left {
+    &::before{
+        content: url("/Images/quote.jpg");
+        display: block;
+        margin: 0 30%;
+    }
+    &::after {
+        content: "- Nada CHEAIB";
+        display: block;
+        font-size: 20px;
+        padding: 0;
+    }
+}
+.container__right {
+    &::before{
+        content: url("/Images/quote.jpg");
+        display: block;
+        margin: 0 30%;
+    }
+    &::after {
+        content: "- ALBERT EINSTEIN";
+        display: block;
+        font-size: 20px;
+        padding: 0;
+    }
+}

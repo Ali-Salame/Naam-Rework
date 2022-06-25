@@ -1,0 +1,283 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+:root {
+    --clr-main_color: rgb(209, 166, 87);
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    
+}
+html {
+    height: 4000px;
+}
+.leaders_pic_section {
+    display: flex;
+    margin-top: 10%;
+    width: 100%;
+    height: 300px;
+}
+.leaders_pic_section img {
+    width: 100%;
+    height: 100%;
+}
+.our_leaders_title {
+    font-size: 40px;
+    margin-left: 40%;
+    color: var(--clr-main_color);
+}
+.top-section {
+    display: flex;
+    justify-content: space-around;
+}
+.search_main_container_section {
+    margin-top: 10%;
+}
+.search {
+    width: 70%;
+    height: 40px;
+    justify-self: end;
+}
+.search::before {
+    content: "Search";
+    display: block;
+    margin-bottom: 10px;
+    color: var(--clr-main_color);
+    font-size: 18px;
+    font-weight: bold;
+}
+.country {
+    width: 70%;
+    height: 40px;
+    justify-self: start;
+
+}
+.country::before {
+    content: "CONTINENT/COUNTRY";
+    display: block;
+    margin-bottom: 10px;
+    color: var(--clr-main_color);
+    font-size: 18px;
+    font-weight: bold;
+}
+.check_contain {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 50%;
+}
+.Employees_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+    padding-bottom: 80px;
+    border-bottom: 5px solid var(--clr-main_color);
+    
+}
+.Employees_container .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 5px solid var(--clr-main_color) ;
+}
+.Employees_container .buttons button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 3px solid var(--clr-main_color);
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.Employees_secondry_container {
+    display: grid;
+    grid-template-columns: repeat(4,152px);
+    margin-top: 80px;
+    margin-left: 10%;
+    gap: 100px;
+}
+.Employees_secondry_container employee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 152px;
+}
+
+.Employees_secondry_container employee img{
+    width: 100%;
+}
+.employee_info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.employee_info::after {
+    content: "Position";
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.leader_info_page {
+    display: flex;
+    justify-content: end;
+    height: 500px;
+}
+
+.leader_page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    background-color: rgb(244, 204, 130);
+    color: black;
+    max-width: 50%;
+    height: 500px;
+    margin-top: 60px;
+    justify-content: right;
+    align-items:flex-end;
+    gap: 50px ;
+    font-size: 20px;
+    
+}
+.leader_info-container {
+    margin-top: 50px;
+    line-height: 20px;
+    display: flex;
+    width: 50%;
+    align-self: flex-end;
+    
+}
+.leader_buttons {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    width: 50%;
+}
+.leader_buttons button {
+    width: 100%;
+    height:50px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid rgb(90, 61, 9);
+    font-weight: bold;
+    font-size: 18px;
+
+}
+.leader_buttons button:active {
+    opacity: 0.5;
+    color: rgb(99, 73, 36);
+}
+.leader_buttons button a {
+    text-decoration: none;
+    color: black;
+}
+.leader_buttons button+button {
+    margin-top: 10px;
+}
+.leader_pic {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 50%;
+    width: 900px;
+    height: 100%;
+    border: 2px solid var(--clr-main_color);
+}
+.leader_pic .last{
+    width: 100%;
+    height: 100%;
+}
+.title-education {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    
+}
+.title-education span {
+    background-color: var(--clr-main_color);
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.her_education {
+    margin-top: 15%;
+    font-size: 20px;
+}
+.her_education p {
+    margin-left: 15px;
+}
+.her_education p span{
+    display: block;
+
+}
+.her_education a {
+    cursor: pointer;
+    text-decoration: none;
+    color: red; 
+    margin-left: 20px;
+    font-weight: bold;
+}
+.her_education a:hover {
+    color: blue;
+}
+
+
+@media screen and (max-width:650px) {
+    .Employees_secondry_container {
+        grid-template-columns: repeat(1,152px);
+        margin-top: 20px;
+        margin-left: 40%;
+        gap: 10px;
+    }
+    .leader_info-container {
+        margin-top: 50px;
+        line-height: 20px;
+        display: flex;
+        width: 100%;
+        align-self: center;   
+    }
+    .leader_name {
+        margin-top: 30px;
+    }
+    .leader_info_page {
+        display: flex;
+        justify-content: center;
+        height: 500px;
+    }
+    .leader_page {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        background-color: rgb(244, 204, 130);
+        color: black;
+        max-width: 100%;
+        height: 500px;
+        margin-top: 60px;
+        justify-content: center;
+        align-items:center;
+        gap: 50px ;
+        font-size: 20px;
+        
+    }
+    .leader_pic {
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100%;
+        border: 2px solid var(--clr-main_color);
+    }
+    .leader_page {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+

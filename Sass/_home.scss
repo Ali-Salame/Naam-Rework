@@ -1,0 +1,174 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+:root {
+    --clr-main_color: rgb(209, 166, 87);
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.container_main-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-top: 90px;
+}
+.left_section_secondry {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+
+}
+.top-sections-third-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+.text {
+    padding-top: 7px;
+    background-color: var(--clr-main_color);
+    text-align: center;
+    width: 80px;
+    height: 40px;
+}
+.middle-sections-third {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px   ;
+    
+}
+.WAAW {
+    max-width: 227px;
+}
+.WAAW::after {
+    content: "WAAM World Association of Achievers Women";
+    display: block;
+    margin-top: 20px;
+    white-space: wrap;
+    width: 100%;
+    font-size: 18px;
+}
+.WAAM {
+    max-width: 227px;
+}
+.WAAM::after {
+    content: "WAAM World Association of Achievers Women";
+    display: block;
+    margin-top: 50px;
+    white-space: wrap;
+    width: 100%;
+    font-size: 18px;
+}
+
+.bottom-sections-third-home {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 0px;
+    gap: 20px ;
+    position: relative;
+    background: transparent;
+}
+.line1 {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    color: black;
+    border-bottom: 2px solid var(--clr-main_color);
+    top: -36px;
+    left: 30px;
+    transform: rotate(120deg);
+}
+.line2 {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    color: black;
+    border-bottom: 2px solid var(--clr-main_color);
+    top: -45px;
+    left: 70px;
+    transform: rotate(60deg);
+}
+.namm, .non-arabic {
+    font-size: 18px;
+    border: 2px solid var(--clr-main_color);
+    padding: 10px;
+    border-radius: 10px;
+}
+.Right-sections-secondry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 50px;
+    overflow: visible;
+}
+.img_right {
+    max-width: 70%;
+    min-width: 375px;
+}
+.pic-intext {
+    position: absolute;
+    font-size: 80px ;
+    font-weight: bold;
+    left: 50%;
+    
+}
+.em {
+    color: rgb(177, 32, 66);
+}
+.container_main_achivers {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-between;
+}
+.middle-sections-third-achivers {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    
+}
+.Left-section-secondry-achivers {
+    min-width: 50%;
+    max-width: 50%;
+    width: 50%;
+}
+.bottom-sections-third_achivers {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-main_color);
+    padding: 10px;
+    border-radius: 10px;
+
+
+}
+@media screen and (max-width:700px) {
+    nav ul {
+        gap: 10px;
+        font-size: 12px;
+    }
+    .container_main-home {
+        flex-direction: column;
+    }
+    .Right-sections-secondry {
+        margin-top: 20%;
+    }
+    
+}
+@media screen and (max-width:1000px) {
+    .container_main {
+        justify-content: space-around;
+    }
+}

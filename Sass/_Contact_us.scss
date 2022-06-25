@@ -1,0 +1,12 @@
+.submit {
+    background: rgb(56, 2, 56) !important;
+    padding: 6px 10px;
+    color: white;
+    font-weight: bold;
+    border: solid 2px rgb(56, 2, 56);
+}
+.submit:hover {
+    background: white !important;
+    color: rgb(56, 2, 56) ;
+    border: solid 2px rgb(56, 2, 56);
+}

@@ -1,0 +1,11 @@
+@import 'header', 'home', 'leader',
+ 'about_us', 'achivers', 'variables',
+ 'virtual', 'Contact_us', 'programs';
+
+
+*,*::after,*::before {
+    box-sizing: border-box;
+};
+.title_about {
+    color: #d1a657 !important;
+};

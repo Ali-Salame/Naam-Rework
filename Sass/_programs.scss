@@ -1,0 +1,129 @@
+.black_container {
+    background: black;
+    color: white;
+    
+    &::before {
+        content: "Qudwa";
+        display: block;
+    }
+    &::after {
+        content: "(Achiver highlighting his story to be a role model to any ambitious young person seeking a way to follow)";
+        display: block;
+    }
+
+}
+
+.black_box {
+    position: relative;
+    .arrows_left {
+        position: absolute;
+        left: 30%;
+        font-size: 40px;
+    }
+    .arrows_right {
+        position: absolute;
+        right: 30%;
+        font-size: 40px;
+    }
+}
+.section {
+    &__left{
+        position: relative;
+
+        &__top {
+            margin-left: 60px;
+        }
+        &__bottom {
+            background: pink;
+            color: white;
+            &::after {
+                content: '(World association of Achiever Women)';
+                display: block;
+                color: white;
+            }
+        }
+        &__arrows_left {
+            position: absolute;
+            font-size: 30px;
+            bottom: -50px;
+            left: 20%;
+        }
+        &__arrows_right {
+            position: absolute;
+            font-size: 30px;
+            bottom: -50px;
+            right: 20%;
+        }
+    }
+    &__right {
+        position: relative;
+        &__top {
+            margin-left: 50px;
+        }
+
+        &__bottom {
+            background: gray;
+            color: white;
+            &::after {
+                content: '(World association of Achiever Women)';
+                display: block;
+                color: white;
+            }
+        }
+        &__arrows_left {
+            position: absolute;
+            font-size: 30px;
+            bottom: -50px;
+            left: 20%;
+        }
+        &__arrows_right {
+            position: absolute;
+            font-size: 30px;
+            bottom: -50px;
+            right: 20%;
+        }
+    }
+}
+
+.last {
+    &_left {
+        align-items: center;
+        &_left {
+            &::after {
+                content:"نعم نادي العربية المنجزة";
+                display: block;
+                margin-top: 10px;
+            }
+            
+        }
+        &_right {
+
+
+            &::after {
+                content:"نادي الغربية المنجزة";
+                display: block;
+                margin-top: 10px;
+            }
+            
+            
+        }
+    }
+    &_right {
+        align-items: center;
+        &_left {
+            &::after {
+                content:"نادي العربي المنجز";
+                display: block;
+                margin-top: 10px;
+            }
+        }
+        &_right {
+            &::after {
+                content:"نادي الغربي المنجز";
+                display: block;
+                margin-top: 10px;
+            }  
+        }
+    }
+
+}
